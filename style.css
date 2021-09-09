@@ -1,0 +1,88 @@
+h1 {
+    color: gray;
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  /* START BELOW THIS LINE */
+
+/* One */
+@media (max-width: 800px) {
+    body {
+        background-color: navy;
+    }
+}
+
+/* Two */
+@media (max-width: 600px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/* Three */
+@media (max-width: 600px) and (max-height:400px) {
+    #one {
+        border: 10px dashed gray;
+    }
+    #three {
+        border: 10px dotted gray;
+    }
+}
+
+/* Four */
+@media (min-width: 900px), (min-height:500px) {
+    #two {
+        border-top: 10px solid gray;
+    }
+}
+
+/* Five */
+@media (orientation: landscape) {
+    body {
+        display: flex;
+    }
+}
+
+/* Six */
+@media (orientation: portrait) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* BONUS PART */
+/* Bonus One */
+@media print {
+    h1 {
+        text-transform: uppercase;
+        color: green;
+    }
+}
+
+/* Bonus Two */
+@media (max-width 800px) {
+    #two {
+        color: navy;
+    }
+}
+
+@media (max-width 600px) {
+    #two {
+        color: orange;
+    }
+}
+
+/* Bonus Three */
+@media (min-width: 750px) and (max-width: 775px) and (min-height: 550px) and (max-height: 575px) {
+    * {
+        font-style: italic;
+    }
+}
